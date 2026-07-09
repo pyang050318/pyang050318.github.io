@@ -175,7 +175,7 @@ Object detection pipeline construction and reproduction based on RAW image conve
 
 - **Second Prize**, China College Students Information Security Contest, university-level, 2025.  
   2025 中国大学生信息安全竞赛，校二等奖，第二负责人。
-
+  
 ## Skills / 技能
 
 **Programming and Tools:** Python, PyCharm, VS Code  
