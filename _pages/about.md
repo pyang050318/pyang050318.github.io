@@ -126,7 +126,7 @@ latest_posts:
 
 <div class="home-card profile-box">
 
-<div class="profile-name">Peng Yang / 杨鹏</div>
+<div class="profile-name">Profile / 基本信息</div>
 
 <div class="profile-title">
 Undergraduate Student<br>
