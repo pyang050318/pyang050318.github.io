@@ -6,9 +6,13 @@ nav: true
 nav_order: 6
 ---
 
-# Contact / 联系方式
+# Contact
 
-- **Name / 姓名：** Peng Yang / 杨鹏
-- **Email / 邮箱：** [y7@mail.dlut.edu.cn](mailto:y7@mail.dlut.edu.cn)
-- **Website / 主页：** [https://pyang050318.github.io](https://pyang050318.github.io)
-- **University / 学校：** Dalian University of Technology
+**Peng Yang**  
+Undergraduate Student  
+Dalian University of Technology
+
+**Email:** [y7@mail.dlut.edu.cn](mailto:y7@mail.dlut.edu.cn)  
+**Website:** [https://pyang050318.github.io](https://pyang050318.github.io)
+
+Please feel free to contact me by email for research communication, project collaboration, or academic opportunities.
