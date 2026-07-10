@@ -1,8 +1,8 @@
 ---
 layout: page
-title: about
+title: hidden-about
 permalink: /about-einstein/
 nav: false
 ---
 
-This is a hidden template page.
+This hidden template page is kept only to avoid broken includes in legacy theme files.

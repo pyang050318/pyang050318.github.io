@@ -5,4 +5,4 @@ permalink: /news/
 nav: false
 ---
 
-{% include news.liquid %}
+This page is hidden.
