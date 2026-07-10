@@ -2,18 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Peng Yang / 杨鹏
+title: Peng Yang
 first_name: Peng
 middle_name:
 last_name: Yang
 contact_note: >
   Please feel free to contact me by email: pyang050318@gmail.com.
-description: Academic homepage of Peng Yang, an undergraduate student at Dalian University of Technology working on medical image analysis, computer vision, and intelligent perception.
+description: Personal academic homepage of Peng Yang, an undergraduate student at Dalian University of Technology focusing on computer vision, medical image analysis, and intelligent perception.
 footer_text: >
-  Academic homepage of Peng Yang.
+  Peng Yang · Future Technology College, Dalian University of Technology
 keywords: medical image analysis, computer vision, diffusion models, microscopy, spindle localization, intelligent perception, autonomous systems, robotics-assisted reproductive medicine
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: P # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://pyang050318.github.io
 baseurl:
@@ -84,11 +84,11 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1180px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -219,7 +219,9 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
+  - _posts/
   - _pages/about_einstein.md
+  - assets/plotly/
   - purgecss.config.js
   - README.md
   - readme_preview/

@@ -9,7 +9,18 @@ DOCKER_DESTINATION=/tmp/_site
 # Function to manage Gemfile.lock
 manage_gemfile_lock() {
     git config --global --add safe.directory /srv/jekyll
-    if command -v git &> /dev/null && [ -f Gemfile.lock ]; then
+    if ! command -v git &> /dev/null || [ ! -f Gemfile.lock ]; then
+        return
+    fi
+
+    # GitHub ZIP downloads do not contain a .git directory. In that case,
+    # keep the supplied lockfile instead of treating it as an untracked file.
+    if ! git rev-parse --is-inside-work-tree &> /dev/null; then
+        echo "No git worktree detected, keeping Gemfile.lock intact"
+        return
+    fi
+
+    if [ -f Gemfile.lock ]; then
         if git ls-files --error-unmatch Gemfile.lock &> /dev/null; then
             echo "Gemfile.lock is tracked by git, keeping it intact"
             git restore Gemfile.lock 2>/dev/null || true

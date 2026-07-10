@@ -1,8 +1,8 @@
 ---
 layout: page
-title: cv
+title: CV
 permalink: /cv/
-nav: true
+nav: false
 nav_order: 5
 ---
 
@@ -26,7 +26,7 @@ Future Technology College</p>
 <h2>Research Experience</h2>
 <ul>
   <li><strong>AI-based Meiotic Spindle Prediction in Human Oocytes</strong>, Project Leader, Nov. 2025 – Present.</li>
-  <li><strong>Air-ground Cooperative Intelligent Perception Project</strong>, Undergraduate Leader, Jun. 2024 – Sep. 2025.</li>
+  <li><strong>Air-ground Cooperative Intelligent Perception Project</strong>, Undergraduate Leader, Jun. 2024 – Sep. 2024.</li>
   <li><strong>RAW-domain Object Detection Based on MindSpore</strong>, Second Leader, Sep. 2024 – Mar. 2026.</li>
   <li><strong>Object Recognition in Foggy Environments</strong>, First Leader, Feb. 2024 – Apr. 2024.</li>
 </ul>
@@ -69,6 +69,5 @@ Future Technology College</p>
   <li><strong>Programming and Tools:</strong> Python, PyCharm, VS Code.</li>
   <li><strong>Deep Learning:</strong> YOLOv5, YOLOv8, REAL-ESRGAN, MindSpore, deep neural networks.</li>
   <li><strong>Research Skills:</strong> data processing, image enhancement, object detection, object tracking, super-resolution reconstruction, reinforcement learning, literature review, experimental design, and manuscript preparation.</li>
-  <li><strong>Language:</strong> CET-4 passed.</li>
 </ul>
 </div>

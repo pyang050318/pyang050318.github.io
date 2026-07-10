@@ -1,61 +1,84 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 nav: true
 nav_order: 3
 ---
 
 <style>
-.project-board { display:grid; gap:18px; }
-.project-card { border:1px solid #d9e4f2; border-radius:12px; background:#fff; padding:22px 24px; box-shadow:0 2px 10px rgba(15,23,42,.04); }
-.project-card h2 { margin-top:0; border-left:5px solid #0b4ea2; padding-left:13px; }
-.project-meta { color:#0b4ea2; font-weight:650; margin-bottom:10px; }
-.project-tags span { display:inline-block; background:#eef5ff; border:1px solid #d8e8ff; color:#073b7a; padding:5px 10px; border-radius:999px; margin:4px 5px 4px 0; font-size:.9rem; }
-.project-card li { margin-bottom: 7px; line-height: 1.6; }
+.project-page { --blue:#0754a5; --soft:#eef6ff; --ink:#172033; --muted:#5b6678; --line:#d9e4f2; }
+.project-intro { color: var(--muted); line-height: 1.75; }
+.project-card { margin: 1.4rem 0; padding: 1.25rem 1.4rem; border: 1px solid var(--line); background: #fff; box-shadow: 0 2px 10px rgba(15,23,42,.04); }
+.project-card h2 { margin: 0 0 .45rem; padding-left: 13px; border-left: 5px solid var(--blue); color: var(--ink); }
+.project-meta { color: var(--blue); font-weight: 650; margin-bottom: .8rem; }
+.project-card p, .project-card li { color: var(--muted); line-height: 1.65; }
+.project-tags span { display: inline-block; margin: 4px 5px 4px 0; padding: 5px 10px; color: #073b7a; background: var(--soft); border: 1px solid #d8e8ff; font-size: .88rem; }
+.image-slot { margin-top: .85rem; padding: .85rem 1rem; color: var(--muted); background: var(--soft); border: 1px dashed #b8d2ef; font-size: .9rem; overflow: hidden; }
+.image-slot img, .media-box img { display: block; max-width: 100%; height: auto; background: #fff; }
+.image-slot video, .media-box video { display: block; width: 100%; height: auto; border: 0; background: #000; }
+.image-slot iframe, .media-box iframe { display: block; width: 100%; aspect-ratio: var(--media-ratio, 16 / 9); height: auto; border: 0; background: #000; }
+.media-box { margin-top: .85rem; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.media-caption { margin: 0; padding: .65rem .8rem; color: var(--muted); background: var(--soft); font-size: .86rem; line-height: 1.55; }
 </style>
 
-# Selected Projects
+<div class="project-page">
 
-<div class="project-board">
+<p class="project-intro">My project experience is organized around computer vision practice: building datasets, improving image quality, detecting weak or difficult targets, and turning model outputs into usable systems or research results.</p>
 
-<div class="project-card">
-<h2>Spindle Prediction of Human Oocytes Using Artificial Intelligence</h2>
-<div class="project-meta">Project Leader · Medical Image Analysis</div>
-<p>This project aims to predict and localize meiotic spindles in human oocytes from brightfield and Hoffman microscopy images. It combines cross-modal generation, spindle-aware enhancement, detection, and voting-based fusion to improve clinically meaningful localization.</p>
+<article class="project-card">
+<h2>AI-based Meiotic Spindle Prediction in Human Oocytes</h2>
+<div class="project-meta">Medical image analysis · Project leader · Nov. 2025 - Present</div>
+<p>This project studies how to predict and localize meiotic spindles in human oocytes from brightfield and Hoffman modulation contrast microscopy images. The work focuses on weak-signal localization, cross-modal generation, object detection, and voting-based fusion for stable prediction.</p>
 <ul>
-  <li>Designed and improved experiments for AI-based spindle prediction.</li>
-  <li>Participated in manuscript writing, ASRM video abstract preparation, patent writing, and software copyright preparation.</li>
-  <li>Proposed innovation points including dataset enhancement, weighted loss, and multi-result voting.</li>
+  <li>Participated in experimental design, dataset improvement, model optimization, and result analysis.</li>
+  <li>Proposed or refined ideas including dataset enhancement, weighted loss, and multi-result voting.</li>
+  <li>Contributed to ASRM video abstract preparation, patent writing, software copyright writing, and manuscript preparation.</li>
 </ul>
-<div class="project-tags"><span>Medical Imaging</span><span>Hoffman Microscopy</span><span>Diffusion</span><span>YOLO</span><span>Clinical Localization</span></div>
+<p>This link demonstrates the ICSI procedure. Our goal is to avoid damaging the meiotic spindle during oocyte injection.</p>
+<div class="media-box">
+  <iframe
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=116894782786069&bvid=BV18WN76EERs&cid=39818298965&p=1"
+    scrolling="no"
+    border="0"
+    frameborder="0"
+    framespacing="0"
+    allowfullscreen="true">
+  </iframe>
 </div>
+</article>
 
-<div class="project-card">
+<article class="project-card">
 <h2>Air-ground Cooperative Intelligent Perception</h2>
-<div class="project-meta">Undergraduate Leader · Intelligent Systems</div>
-<p>The project focused on data construction, visual perception, tracking, and autonomous navigation in air-ground cooperative scenarios.</p>
+<div class="project-meta">Computer vision and intelligent systems · Undergraduate leader · Jun. 2024 - Sep. 2025</div>
+<p>This project built a perception workflow for air-ground cooperative scenarios, including video data processing, image enhancement, object tracking, and autonomous navigation exploration.</p>
 <ul>
-  <li>Manually labeled and classified video data crawled from the web.</li>
-  <li>Applied REAL-ESRGAN for super-resolution reconstruction to improve dataset quality.</li>
-  <li>Used YOLOv8 for trajectory recognition and tracking.</li>
+  <li>Labeled and classified video data for visual perception tasks.</li>
+  <li>Used REAL-ESRGAN for super-resolution reconstruction to improve image quality.</li>
+  <li>Applied YOLOv8 for trajectory recognition and object tracking.</li>
   <li>Explored reinforcement learning for autonomous obstacle avoidance and path planning.</li>
 </ul>
-<div class="project-tags"><span>REAL-ESRGAN</span><span>YOLOv8</span><span>Tracking</span><span>Reinforcement Learning</span></div>
-</div>
+</article>
 
-<div class="project-card">
+<article class="project-card">
 <h2>RAW-domain Object Detection Based on MindSpore</h2>
-<div class="project-meta">Second Leader · Object Detection</div>
-<p>This project investigated RAW-domain image processing and object detection. I was responsible for RAW image conversion and processing, and reproduced YOLOv5-based detection after converting RAW images into JPG format.</p>
-<div class="project-tags"><span>RAW Image</span><span>MindSpore</span><span>YOLOv5</span><span>Image Processing</span></div>
+<div class="project-meta">Object detection · Second leader · Sep. 2024 - Mar. 2026</div>
+<p>This university-level innovation project explored object detection from RAW-domain images. I focused on RAW image conversion and processing, and reproduced YOLOv5-based detection after converting RAW images into JPG format.</p>
+</article>
+
+<article class="project-card">
+<h2>Object Recognition in Foggy Environments</h2>
+<div class="project-meta">Adverse-weather vision · Team leader · Feb. 2024 - Apr. 2024</div>
+<p>I led a course research project on special-vehicle recognition in foggy environments. The team reviewed defogging methods, compared algorithms, and completed research writing on defogging and object recognition under adverse weather conditions.</p>
+<p><strong>Outcome:</strong> Awarded Outstanding Micro-project by Future Technology College.</p>
+<p>These two images demonstrate the different preprocessing methods applied to our dataset.</p>
+<div class="media-box">
+  <img src="{{ '/assets/img/projects/jiawu1.png' | relative_url }}" alt="Project image">
+</div>
+<div class="media-box">
+  <img src="{{ '/assets/img/projects/jiawu2.png' | relative_url }}" alt="Project image">
 </div>
 
-<div class="project-card">
-<h2>Object Recognition in Foggy Environments</h2>
-<div class="project-meta">First Leader · Course Research Project</div>
-<p>I led a team to investigate object recognition for special vehicles in severe foggy environments. The work included literature review, algorithm comparison, and research paper writing on defogging and object recognition.</p>
-<div class="project-tags"><span>Image Defogging</span><span>Object Recognition</span><span>Adverse Weather</span><span>Team Leadership</span></div>
-</div>
+</article>
 
 </div>

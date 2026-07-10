@@ -1,387 +1,330 @@
 ---
-layout: about
-title: about
+layout: default
+title: Home
 permalink: /
-subtitle:
-
-nav: true
+nav: false
 nav_order: 1
-
-profile: false
-
-selected_papers: false
-social: false
-
-announcements:
-  enabled: false
-  scrollable: false
-  limit: 0
-
-latest_posts:
-  enabled: false
-  scrollable: false
-  limit: 0
+sitemap: true
 ---
 
 <style>
-:root {
-  --dut-blue: #0b4ea2;
-  --dut-blue-dark: #073b7a;
-  --dut-light: #f4f8ff;
-  --dut-border: #d9e4f2;
-  --dut-text: #1f2937;
-  --dut-muted: #5b677a;
+.py-home {
+  --py-blue: #0754a5;
+  --py-blue-dark: #043a73;
+  --py-blue-soft: #eef6ff;
+  --py-gold: #c99a2e;
+  --py-ink: #172033;
+  --py-muted: #5b6678;
+  --py-line: #d9e4f2;
+  --py-surface: #ffffff;
+  --py-soft: #f6f9fd;
+  color: var(--py-ink);
+  font-family: Inter, Arial, sans-serif;
 }
 
-.dut-page {
-  color: var(--dut-text);
+[data-theme="dark"] .py-home {
+  --py-ink: #edf3fc;
+  --py-muted: #aebbd0;
+  --py-line: #33445d;
+  --py-surface: #172033;
+  --py-soft: #111a2a;
+  --py-blue-soft: #172b47;
 }
 
-.dut-banner {
-  border-radius: 14px;
-  background: linear-gradient(135deg, #0b4ea2 0%, #1f75d6 56%, #67a8ff 100%);
-  color: #fff;
-  padding: 28px 32px;
-  margin: 8px 0 22px;
-  box-shadow: 0 10px 24px rgba(11, 78, 162, 0.18);
-}
+.py-home *, .py-home *::before, .py-home *::after { box-sizing: border-box; }
+.post > .post-header,
+.post-header,
+.page-title { display: none !important; }
 
-.dut-banner h1 {
-  color: #fff;
-  margin: 0 0 8px;
-  font-size: 2.3rem;
-  letter-spacing: 0.2px;
-}
-
-.dut-banner .subtitle {
-  font-size: 1.04rem;
-  opacity: 0.96;
-  line-height: 1.7;
-}
-
-.dut-layout {
+.py-grid {
   display: grid;
-  grid-template-columns: 295px 1fr;
-  gap: 22px;
+  grid-template-columns: 275px minmax(0, 1fr);
+  gap: 2.2rem;
   align-items: start;
+  margin-top: 2.2rem;
 }
 
-.dut-side, .dut-card {
-  border: 1px solid var(--dut-border);
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
-}
-
-.dut-side {
-  overflow: hidden;
+.py-sidebar {
   position: sticky;
-  top: 82px;
+  top: 92px;
+  border-top: 4px solid var(--py-blue);
+  background: var(--py-surface);
+  box-shadow: 0 8px 26px rgba(22, 47, 79, .08);
 }
 
-.dut-side-head {
-  background: var(--dut-light);
-  border-left: 6px solid var(--dut-blue);
-  padding: 22px 22px 18px;
-}
-
-.dut-side-head h2 {
-  font-size: 1.52rem;
-  margin: 0 0 8px;
-  color: #111827;
-}
-
-.dut-side-head p {
+.py-sidebar h2 {
   margin: 0;
-  color: var(--dut-muted);
-  line-height: 1.55;
+  padding: 1.35rem 1.45rem 1rem;
+  color: var(--py-ink);
+  background: var(--py-soft);
+  border-bottom: 1px solid var(--py-line);
+  font-size: 1.26rem;
 }
 
-.dut-info {
-  padding: 18px 22px 22px;
-}
-
-.dut-info-item {
-  margin-bottom: 15px;
-}
-
-.dut-info-label {
-  display: block;
-  color: var(--dut-blue-dark);
-  font-weight: 650;
-  margin-bottom: 4px;
-}
-
-.dut-info-value {
-  line-height: 1.55;
-}
-
-.dut-info a {
-  color: var(--dut-blue);
-}
-
-.dut-main {
+.py-portrait {
   display: grid;
-  gap: 18px;
+  justify-items: center;
+  padding: 1rem 1.45rem 1.15rem;
+  border-bottom: 1px solid var(--py-line);
+  background: var(--py-surface);
 }
 
-.dut-card {
-  padding: 24px 26px;
+.py-portrait img {
+  display: block;
+  width: 100%;
+  max-width: 168px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--py-line);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(22, 47, 79, .12);
 }
 
-.dut-section-title {
+.py-portrait-placeholder {
+  display: grid;
+  place-items: center;
+  width: min(100%, 168px);
+  aspect-ratio: 3 / 4;
+  padding: 1rem;
+  color: var(--py-muted);
+  text-align: center;
+  background: var(--py-soft);
+  border: 1px dashed #b8d2ef;
+}
+
+.py-portrait-placeholder strong {
+  display: block;
+  margin-bottom: .3rem;
+  color: var(--py-ink);
+  font-size: .94rem;
+}
+
+.py-portrait-placeholder span {
+  display: block;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.py-info {
+  padding: .55rem 1.45rem 1.25rem;
+}
+
+.py-info-row {
+  padding: .78rem 0;
+  border-bottom: 1px solid var(--py-line);
+}
+
+.py-info-row:last-child { border-bottom: 0; }
+.py-info-row dt {
+  margin: 0 0 .25rem;
+  color: var(--py-blue);
+  font-size: .76rem;
+  font-weight: 750;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.py-info-row dd {
+  margin: 0;
+  color: var(--py-ink);
+  font-size: .91rem;
+  line-height: 1.6;
+}
+
+.py-info-row a { color: var(--py-blue); overflow-wrap: anywhere; }
+
+.py-side-links {
+  display: grid;
+  gap: .5rem;
+  padding: 0 1.45rem 1.45rem;
+}
+
+.py-side-links a {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin: 0 0 16px;
-  font-size: 1.42rem;
-  font-weight: 700;
-  color: #111827;
+  padding: .62rem .8rem;
+  color: var(--py-blue-dark);
+  background: var(--py-blue-soft);
+  font-size: .86rem;
+  font-weight: 650;
+  text-decoration: none;
+  border-left: 3px solid var(--py-blue);
 }
 
-.dut-section-title::before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 28px;
-  border-radius: 6px;
-  background: var(--dut-blue);
+.py-side-links a::after { content: "→"; }
+
+.py-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2.15rem;
+  border-bottom: 1px solid var(--py-line);
+  scroll-margin-top: 90px;
 }
 
-.dut-card p {
-  line-height: 1.75;
-  margin-bottom: 12px;
-}
+.py-section:last-child { border-bottom: 0; }
 
-.dut-tags {
+.py-heading {
   display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 8px;
+  gap: .9rem;
+  align-items: baseline;
+  margin: 0 0 1.2rem;
+  color: var(--py-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  line-height: 1.25;
 }
 
-.dut-tag {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #eef5ff;
-  border: 1px solid #d8e8ff;
-  color: var(--dut-blue-dark);
-  font-size: 0.92rem;
+.py-heading::before {
+  content: "";
+  flex: 0 0 5px;
+  align-self: stretch;
+  min-height: 1.7rem;
+  background: var(--py-blue);
 }
 
-.dut-grid-2 {
+.py-lead {
+  margin-top: 0;
+  color: var(--py-ink);
+  font-size: 1.02rem;
+  line-height: 1.82;
+}
+
+.py-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 1rem;
 }
 
-.dut-highlight {
-  border-left: 4px solid var(--dut-blue);
-  background: #fbfdff;
-  border-radius: 10px;
-  padding: 16px 17px;
-  border-top: 1px solid #edf3fb;
-  border-right: 1px solid #edf3fb;
-  border-bottom: 1px solid #edf3fb;
+.py-card {
+  padding: 1.05rem 1.15rem;
+  background: var(--py-soft);
+  border-left: 3px solid var(--py-blue);
 }
 
-.dut-highlight h3 {
-  margin: 0 0 8px;
-  font-size: 1.05rem;
-  color: #111827;
+.py-card h3 {
+  margin: 0 0 .45rem;
+  color: var(--py-ink);
+  font-size: 1rem;
 }
 
-.dut-highlight p {
+.py-card p {
   margin: 0;
-  color: var(--dut-muted);
-  font-size: 0.95rem;
-}
-
-.dut-list {
-  margin-bottom: 0;
-}
-
-.dut-list li {
-  margin-bottom: 9px;
+  color: var(--py-muted);
+  font-size: .9rem;
   line-height: 1.65;
 }
 
-.dut-quick a {
-  display: inline-block;
-  margin: 6px 8px 4px 0;
-  padding: 7px 13px;
-  border-radius: 7px;
-  background: var(--dut-blue);
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.94rem;
+.py-list {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 
-.dut-quick a:hover {
-  background: var(--dut-blue-dark);
-  color: #fff;
+.py-list li {
+  margin-bottom: .62rem;
+  color: var(--py-muted);
+  line-height: 1.65;
 }
 
-@media (max-width: 850px) {
-  .dut-layout {
-    grid-template-columns: 1fr;
-  }
-  .dut-side {
-    position: static;
-  }
-  .dut-grid-2 {
-    grid-template-columns: 1fr;
-  }
+.py-list strong { color: var(--py-ink); }
+.py-link { display: inline-block; margin-top: .75rem; color: var(--py-blue); font-weight: 650; }
+
+@media (max-width: 900px) {
+  .py-grid { grid-template-columns: 1fr; }
+  .py-sidebar { position: static; }
+}
+
+@media (max-width: 640px) {
+  .py-card-grid { grid-template-columns: 1fr; }
 }
 </style>
 
-<div class="dut-page">
+<div class="py-home">
+  <div class="py-grid">
+    <aside class="py-sidebar" aria-label="Profile summary">
+      <h2>Peng Yang</h2>
+      <div class="py-portrait">
+               <img src="{{ '/assets/img/profile-photo.jpg' | relative_url }}" alt="Peng Yang" loading="eager">
+          
+      </div>
+      <dl class="py-info">
+        <div class="py-info-row"><dt>Affiliation</dt><dd>Future Technology College<br>Dalian University of Technology</dd></div>
+        <div class="py-info-row"><dt>Program</dt><dd>Intelligent Vehicle Engineering<br>AI Future Technology Class</dd></div>
+        <div class="py-info-row"><dt>Focus</dt><dd>Computer Vision<br>Medical Image Analysis</dd></div>
+        <div class="py-info-row"><dt>Hometown</dt><dd>Tianshui, Gansu, China</dd></div>
+        <div class="py-info-row"><dt>Email</dt><dd><a href="mailto:pyang050318@gmail.com">pyang050318@gmail.com</a></dd></div>
+      </dl>
+      <nav class="py-side-links" aria-label="Homepage sections">
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#projects">Projects</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#work">Work</a>
+      </nav>
+    </aside>
 
-<div class="dut-banner">
-  <h1>Peng Yang</h1>
-  <div class="subtitle">
-    Undergraduate Student · Future Technology College · Dalian University of Technology<br>
-    Intelligent Vehicle Engineering, AI Future Technology Class
+    <main>
+      <section class="py-section" id="profile">
+        <h2 class="py-heading">Profile</h2>
+        <p class="py-lead">I am an undergraduate student in Intelligent Vehicle Engineering, AI Future Technology Class, at Dalian University of Technology. My work centers on computer vision, especially medical microscopic image analysis, object detection, image enhancement, and AI-assisted perception systems.</p>
+      </section>
+
+      <section class="py-section" id="education">
+        <h2 class="py-heading">Education</h2>
+        <div class="py-card-grid">
+          <article class="py-card">
+            <h3>Sep. 2020 - Jun. 2023</h3>
+            <p>Tianshui No. 1 High School.</p>
+          </article>
+          <article class="py-card">
+            <h3>Sep. 2023 - Jun. 2027</h3>
+            <p>Dalian University of Technology.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-section" id="outputs">
+        <h2 class="py-heading">Selected Outputs</h2>
+        <ul class="py-list">
+          <li><strong>ASRM video abstract:</strong> <em>Spindle Prediction of Human Oocytes Using Artificial Intelligence From Brightfield Images</em>, accepted, second author.</li>
+          <li><strong>Manuscript:</strong> <em>Spindle-aware Cross-modal Diffusion for Meiotic Spindle Localization in Human Oocytes From Hoffman Modulation Contrast Microscopy</em>, in preparation, co-first author.</li>
+          <li><strong>Patent:</strong> 基于普通亮场或霍夫曼成像的细胞纺锤体定位系统和方法, under application.</li>
+          <li><strong>Software copyright:</strong> 卵母细胞纺锤体智能定位辅助系统, under application.</li>
+        </ul>
+        <a class="py-link" href="{{ '/publications/' | relative_url }}">View all outputs</a>
+      </section>
+
+      <section class="py-section" id="projects">
+        <h2 class="py-heading">Projects</h2>
+        <div class="py-card-grid">
+          <article class="py-card"><h3>AI-based Spindle Prediction</h3><p>Medical microscopic image analysis project involving dataset improvement, cross-modal diffusion, detection, voting-based fusion, and research writing.</p></article>
+          <article class="py-card"><h3>Air-ground Intelligent Perception</h3><p>Computer vision pipeline with data labeling, REAL-ESRGAN enhancement, YOLOv8 tracking, and reinforcement learning exploration.</p></article>
+          <article class="py-card"><h3>RAW-domain Object Detection</h3><p>RAW image processing and YOLOv5-based detection reproduction using MindSpore-related project work.</p></article>
+          <article class="py-card"><h3>Foggy-scene Object Recognition</h3><p>Team-led investigation of defogging and special-vehicle recognition under adverse weather conditions.</p></article>
+        </div>
+        <a class="py-link" href="{{ '/projects/' | relative_url }}">View project details</a>
+      </section>
+
+      <section class="py-section" id="competitions">
+        <h2 class="py-heading">Competitions</h2>
+        <ul class="py-list">
+          <li><strong>National Third Prize:</strong> China Collegiate Computing Contest - AI Creative Competition.</li>
+          <li><strong>National Excellence Award:</strong> China Collegiate Computing Contest - AIGC Innovation Competition.</li>
+          <li><strong>Provincial Second Prize:</strong> China College Students Engineering Practice and Innovation Ability Competition.</li>
+        </ul>
+        <a class="py-link" href="{{ '/competitions/' | relative_url }}">View competition details</a>
+      </section>
+
+      <section class="py-section" id="work">
+        <h2 class="py-heading">Social Practice & Work</h2>
+        <ul class="py-list">
+          <li>Class team leader, Future Technology College Class of 2023.</li>
+          <li>Officer, Sports Department, Student Union of Future Technology College.</li>
+          <li>Vice President, Badminton Association of Dalian University of Technology.</li>
+          <li>Participated in admission outreach, Hong Kong study practice, and China-Europe youth dialogue activities.</li>
+        </ul>
+        <a class="py-link" href="{{ '/social-practice-work/' | relative_url }}">View detailed experience</a>
+      </section>
+    </main>
   </div>
-</div>
-
-<div class="dut-layout">
-
-<aside class="dut-side">
-  <div class="dut-side-head">
-    <h2>Profile</h2>
-    <p>AI · Medical Imaging · Intelligent Perception</p>
-  </div>
-  <div class="dut-info">
-    <div class="dut-info-item">
-      <span class="dut-info-label">Name</span>
-      <div class="dut-info-value">Peng Yang</div>
-    </div>
-    <div class="dut-info-item">
-      <span class="dut-info-label">Affiliation</span>
-      <div class="dut-info-value">Future Technology College<br>Dalian University of Technology</div>
-    </div>
-    <div class="dut-info-item">
-      <span class="dut-info-label">Major</span>
-      <div class="dut-info-value">Intelligent Vehicle Engineering<br>AI Future Technology Class</div>
-    </div>
-    <div class="dut-info-item">
-      <span class="dut-info-label">Research Advisor</span>
-      <div class="dut-info-value">Prof. Guanqiao Shan</div>
-    </div>
-    <div class="dut-info-item">
-      <span class="dut-info-label">Email</span>
-      <div class="dut-info-value"><a href="mailto:pyang050318@gmail.com">pyang050318@gmail.com</a></div>
-    </div>
-    <div class="dut-info-item">
-      <span class="dut-info-label">Research Focus</span>
-      <div class="dut-info-value">Medical image analysis, computer vision, deep learning, and intelligent perception</div>
-    </div>
-  </div>
-</aside>
-
-<main class="dut-main">
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Biography</h2>
-  <p>
-    I am an undergraduate student in the <strong>AI Future Technology Class</strong> of <strong>Intelligent Vehicle Engineering</strong> at <strong>Dalian University of Technology</strong>. My training combines intelligent vehicles, computer vision, deep learning, optimization, mechanics, perception, and control, which provides an interdisciplinary background for AI-driven visual perception and biomedical image analysis.
-  </p>
-  <p>
-    My current research focuses on <strong>AI-based meiotic spindle prediction in human oocytes from brightfield and Hoffman microscopy images</strong>. I am deeply involved in experiment design, model improvement, innovation proposal, video abstract preparation, patent and software copyright writing, and manuscript preparation. I am especially interested in using generative models, object detection, and clinically meaningful localization methods to solve weak-signal microscopic image analysis problems.
-  </p>
-</section>
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Research Interests</h2>
-  <div class="dut-tags">
-    <span class="dut-tag">Medical Image Analysis</span>
-    <span class="dut-tag">Microscopic Image Understanding</span>
-    <span class="dut-tag">Computer Vision</span>
-    <span class="dut-tag">Deep Learning</span>
-    <span class="dut-tag">Diffusion and Generative Models</span>
-    <span class="dut-tag">Object Detection and Tracking</span>
-    <span class="dut-tag">Image Enhancement</span>
-    <span class="dut-tag">Intelligent Vehicle Perception</span>
-    <span class="dut-tag">Autonomous Systems</span>
-    <span class="dut-tag">Reinforcement Learning</span>
-  </div>
-</section>
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Current Focus</h2>
-  <div class="dut-highlight">
-    <h3>AI-based Meiotic Spindle Prediction in Human Oocytes</h3>
-    <p>
-      This project investigates spindle localization from brightfield and Hoffman microscopy images. The work combines cross-modal image generation, spindle-aware enhancement, object detection, and multi-result voting for clinically meaningful localization.
-    </p>
-  </div>
-  <br>
-  <div class="dut-grid-2">
-    <div class="dut-highlight">
-      <h3>ASRM Video Abstract</h3>
-      <p><em>Spindle Prediction of Human Oocytes Using Artificial Intelligence From Brightfield Images</em><br>Accepted by ASRM, second author.</p>
-    </div>
-    <div class="dut-highlight">
-      <h3>Manuscript in Preparation</h3>
-      <p><em>Spindle-aware Cross-modal Diffusion for Meiotic Spindle Localization in Human Oocytes From Hoffman Modulation Contrast Microscopy</em></p>
-    </div>
-    <div class="dut-highlight">
-      <h3>Patent</h3>
-      <p>基于普通亮场或霍夫曼成像的细胞纺锤体定位系统和方法<br>Invention patent under application.</p>
-    </div>
-    <div class="dut-highlight">
-      <h3>Software Copyright</h3>
-      <p>卵母细胞纺锤体智能定位辅助系统<br>Software copyright under application.</p>
-    </div>
-  </div>
-</section>
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Selected Research Projects</h2>
-  <div class="dut-grid-2">
-    <div class="dut-highlight">
-      <h3>Meiotic Spindle Prediction</h3>
-      <p>Medical image analysis, cross-modal generation, object detection, spindle localization, and clinical evaluation.</p>
-    </div>
-    <div class="dut-highlight">
-      <h3>Air-ground Cooperative Intelligent Perception</h3>
-      <p>Video data annotation, REAL-ESRGAN super-resolution, YOLOv8 tracking, and reinforcement-learning-based navigation.</p>
-    </div>
-    <div class="dut-highlight">
-      <h3>RAW-domain Object Detection</h3>
-      <p>RAW image conversion and object detection reproduction based on MindSpore and YOLOv5.</p>
-    </div>
-    <div class="dut-highlight">
-      <h3>Object Recognition in Foggy Environments</h3>
-      <p>Investigation of image defogging algorithms and object recognition for special vehicles in adverse environments.</p>
-    </div>
-  </div>
-</section>
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Research Capabilities</h2>
-  <ul class="dut-list">
-    <li><strong>Data processing:</strong> building, cleaning, labeling, and improving complex image datasets from different sources.</li>
-    <li><strong>Deep learning and modeling:</strong> applying image enhancement, object detection, super-resolution, and weak-signal localization methods.</li>
-    <li><strong>Experimental design:</strong> designing experiments, comparing model variants, and proposing practical innovation points.</li>
-    <li><strong>Interdisciplinary application:</strong> transferring visual perception methods to biomedical and engineering scenarios.</li>
-    <li><strong>Project coordination:</strong> leading student projects, coordinating team work, and promoting research outputs.</li>
-  </ul>
-</section>
-
-<section class="dut-card">
-  <h2 class="dut-section-title">Quick Links</h2>
-  <div class="dut-quick">
-    <a href="/research/">Research</a>
-    <a href="/projects/">Projects</a>
-    <a href="/publications/">Publications</a>
-    <a href="/cv/">CV</a>
-    <a href="/contact/">Contact</a>
-  </div>
-</section>
-
-</main>
-</div>
 </div>

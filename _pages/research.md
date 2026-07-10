@@ -1,8 +1,8 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
-nav: true
+nav: false
 nav_order: 2
 ---
 
@@ -38,7 +38,7 @@ nav_order: 2
 
 <div class="research-card">
 <h2>Air-ground Cooperative Intelligent Perception Project</h2>
-<div class="meta">Undergraduate Leader · Jun. 2024 – Sep. 2025</div>
+<div class="meta">Undergraduate Leader · Jun. 2024 – Sep. 2024</div>
 <p>This project involved video data labeling and classification, image quality enhancement using REAL-ESRGAN, trajectory recognition and tracking using YOLOv8, and autonomous obstacle avoidance and path planning with reinforcement learning.</p>
 <p>Through this project, I improved my understanding of deep neural networks, GAN-based super-resolution reconstruction, code reproduction, reinforcement learning, and independent implementation.</p>
 <span class="badge">REAL-ESRGAN</span><span class="badge">YOLOv8</span><span class="badge">Object Tracking</span><span class="badge">Reinforcement Learning</span><span class="badge">Autonomous Navigation</span>
