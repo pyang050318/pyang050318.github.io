@@ -111,6 +111,7 @@ latest_posts:
   color: white;
 }
 
+  
 @media (max-width: 768px) {
   .home-hero {
     grid-template-columns: 1fr;
