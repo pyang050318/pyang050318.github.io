@@ -10,7 +10,7 @@ nav_order: 1
 profile: false
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: false
@@ -22,8 +22,6 @@ latest_posts:
   scrollable: false
   limit: 0
 ---
-
-## Peng Yang / 杨鹏
 
 I am an undergraduate student majoring in **Intelligent Vehicle Engineering (AI Future Technology Class)** at **Dalian University of Technology**.
 
@@ -37,13 +35,13 @@ My research interests include **medical image analysis, computer vision, deep le
 
 ## Research Interests / 研究兴趣
 
-- Medical Image Analysis / 医学图像分析
-- Computer Vision / 计算机视觉
-- Deep Learning / 深度学习
-- Object Detection and Tracking / 目标检测与跟踪
-- Image Generation and Enhancement / 图像生成与增强
-- Intelligent Vehicle Perception and Decision-making / 智能车辆感知与决策
-- Autonomous Systems and Reinforcement Learning / 自主系统与强化学习
+- **Medical Image Analysis** / 医学图像分析
+- **Computer Vision** / 计算机视觉
+- **Deep Learning** / 深度学习
+- **Object Detection and Tracking** / 目标检测与跟踪
+- **Image Generation and Enhancement** / 图像生成与增强
+- **Intelligent Vehicle Perception and Decision-making** / 智能车辆感知与决策
+- **Autonomous Systems and Reinforcement Learning** / 自主系统与强化学习
 
 ---
 
@@ -55,6 +53,22 @@ My research interests include **medical image analysis, computer vision, deep le
 This project focuses on meiotic spindle prediction in human oocytes from bright-field and Hoffman microscopy images. My work includes experimental design, model improvement, innovation proposal, video abstract preparation, patent and software copyright writing, and manuscript preparation.
 
 本项目面向明场/霍夫曼显微图像中的人类卵母细胞纺锤体预测问题。我主要参与实验设计、模型改进、创新点提出、视频摘要制作、专利与软著撰写以及论文撰写。
+
+---
+
+## Selected Projects / 代表项目
+
+### Meiotic Spindle Prediction in Human Oocytes  
+Medical image analysis · Image generation · Object detection · Clinical localization  
+医学图像分析 · 图像生成 · 目标检测 · 临床辅助定位
+
+### Air-ground Cooperative Intelligent Perception  
+Super-resolution reconstruction · YOLOv8 · Object tracking · Reinforcement learning  
+超分辨率重建 · YOLOv8 · 目标跟踪 · 强化学习
+
+### RAW-domain Object Detection  
+RAW image processing · MindSpore · YOLOv5 · Object detection  
+RAW 图像处理 · MindSpore · YOLOv5 · 目标检测
 
 ---
 
