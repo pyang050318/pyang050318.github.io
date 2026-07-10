@@ -2,18 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Peng Yang / 杨鹏
+title: Peng Yang
 first_name: Peng
 middle_name:
 last_name: Yang
 contact_note: >
   Please feel free to contact me by email.
-description: Academic homepage of Peng Yang
+description: Academic homepage of Peng Yang, undergraduate student at Dalian University of Technology.
 footer_text: >
-  Academic homepage of Peng Yang / 杨鹏.
-keywords: medical image analysis, computer vision, diffusion models, microscopy, robotics-assisted reproductive medicine, autonomous driving
+  Academic homepage of Peng Yang.
+keywords: medical image analysis, computer vision, deep learning, object detection, image generation, intelligent perception, autonomous systems
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
 
 url: https://pyang050318.github.io
 baseurl:
@@ -219,7 +220,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -355,10 +355,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
