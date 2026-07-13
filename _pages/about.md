@@ -266,7 +266,9 @@ sitemap: true
     <main>
       <section class="py-section" id="profile">
         <h2 class="py-heading">Profile</h2>
-        <p class="py-lead">I am an undergraduate student in Intelligent Vehicle Engineering, AI Future Technology Class, at Dalian University of Technology. My work centers on computer vision, especially medical microscopic image analysis, object detection, image enhancement, and AI-assisted perception systems.</p>
+        <p class="py-lead">I am a third-year undergraduate student majoring in Intelligent Vehicle Engineering at the Future Technology College, Dalian University of Technology.My undergraduate advisor is Professor Guanqiao Shan from the School of Artificial Intelligence, Dalian University of Technology. Professor Shan is a recipient of the National Overseas High-level Young Talents Program and was advised by Professor Yu Sun, a foreign member of the Chinese Academy of Engineering, a member of the U.S. National Academy of Engineering, and a fellow of the three national academies of Canada.My research interests focus on the interdisciplinary applications of artificial intelligence in mechanical engineering and medicine. I am particularly interested in medical image analysis, intelligent perception, and AI-assisted biomedical systems. I hope to communicate and collaborate with researchers and professionals in related fields.
+</p>
+        </p>
       </section>
 
       <section class="py-section" id="education">
