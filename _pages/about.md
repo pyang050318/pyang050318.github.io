@@ -249,7 +249,7 @@ sitemap: true
       <dl class="py-info">
         <div class="py-info-row"><dt>Affiliation</dt><dd>Future Technology College<br>Dalian University of Technology</dd></div>
         <div class="py-info-row"><dt>Program</dt><dd>Intelligent Vehicle Engineering<br>AI Future Technology Class</dd></div>
-        <div class="py-info-row"><dt>Focus</dt><dd>Computer Vision<br>Medical Image Analysis</dd></div>
+        <div class="py-info-row"><dt>Focus</dt><dd> AI-enabled Micromanipulation<br>Cell Surgery Robotics<br>Microscopic Image Understanding</dd></div>
         <div class="py-info-row"><dt>Hometown</dt><dd>Tianshui, Gansu, China</dd></div>
         <div class="py-info-row"><dt>Email</dt><dd><a href="mailto:pyang050318@gmail.com">pyang050318@gmail.com</a></dd></div>
       </dl>
@@ -266,8 +266,7 @@ sitemap: true
     <main>
       <section class="py-section" id="profile">
         <h2 class="py-heading">Profile</h2>
-        <p class="py-lead">I am a third-year undergraduate student majoring in Intelligent Vehicle Engineering at the Future Technology College, Dalian University of Technology.My undergraduate advisor is Professor Guanqiao Shan from the School of Artificial Intelligence, Dalian University of Technology. Professor Shan is a recipient of the National Overseas High-level Young Talents Program and was advised by Professor Yu Sun, a foreign member of the Chinese Academy of Engineering, a member of the U.S. National Academy of Engineering, and a fellow of the three national academies of Canada.My research interests focus on the interdisciplinary applications of artificial intelligence in mechanical engineering and medicine. I am particularly interested in medical image analysis, intelligent perception, and AI-assisted biomedical systems. I hope to communicate and collaborate with researchers and professionals in related fields.
-</p>
+        <p class="py-lead"><p>I am a third-year undergraduate student majoring in Intelligent Vehicle Engineering at the Future Technology College, Dalian University of Technology.My undergraduate advisor is Professor Guanqiao Shan from the School of Artificial Intelligence, Dalian University of Technology. My current research training is closely related to micromanipulation, cell surgery robotics, intelligent control, and AI-assisted biomedical perception.My research interests include AI-enabled micromanipulation, cell surgery robotics, microscopic image understanding, medical image analysis, and intelligent control systems. I am currently working on AI-based meiotic spindle localization in human oocytes from brightfield and Hoffman modulation contrast microscopy images, aiming to support safer and more intelligent cell manipulation procedures.I am open to communication and collaboration with researchers and professionals in robotics, artificial intelligence, biomedical engineering, and reproductive medicine.</p>
       </section>
 
       <section class="py-section" id="education">
